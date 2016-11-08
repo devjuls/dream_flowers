@@ -1,0 +1,82 @@
+.hero {
+  background: linear-gradient(to right, #f5cc8a 0%, #ff6978 100%);
+  padding-top: 90px;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  .container {
+    position: relative;
+    min-height: 526px;
+
+    &:after {
+      content: "";
+      display: block;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 55%;
+      height: 100%;
+      background-image: url('../../images/buket-hero.png');
+      background-repeat: no-repeat;
+      background-position: 100% 100%;
+      z-index: 0;
+    }
+  }
+}
+
+.hero__content {
+  width: 50%;
+  padding-bottom: 84px;
+  position: relative;
+  z-index: 1;
+}
+
+.hero__title {
+  font-size: 60px;
+  line-height: 70px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #fff;
+  margin-bottom: 37px;
+}
+
+.hero__text {
+  margin-bottom: 33px;
+  margin-right: 40px;
+
+  p {
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #fff;
+  }
+}
+
+.hero__text_big {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 38px;
+  line-height: 48px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: #fff;
+  margin-bottom: 16px;
+
+  b {
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 40px;
+  background-color: $pink1;
+  border-radius: 20px;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #fff;
+
+}

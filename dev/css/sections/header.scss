@@ -1,0 +1,95 @@
+.header {
+  padding-top: 25px;
+  padding-bottom: 15px;
+}
+
+.logo {
+  // float: left;
+  display: inline-block;
+  vertical-align: middle;
+  width: 11%;
+}
+
+.logo__image {
+  font-size: 0;
+
+  & img {
+    max-width: 100%;
+  }
+}
+
+.nav {
+  // float: left;
+  display: inline-block;
+  vertical-align: middle;
+  width: 71%;
+  margin-right: 1%;
+}
+
+.nav__list {
+  text-align: center;
+}
+
+.nav__item {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.nav__link {
+  display: block;
+  padding-top: 1px;
+  padding-bottom: 3px;
+  padding-left: 12px;
+  padding-right: 12px;
+  border-radius: 12px;
+  color: $grey;
+  font-size: 14px;
+  font-weight: 700;
+
+  &:hover {
+    background-color: $orange;
+    color: #fff;
+  }
+}
+
+.order-call {
+  // float: right;
+  display: inline-block;
+  vertical-align: middle;
+  width: 14%;
+  text-align: center;
+}
+
+.order-call__phone {
+  display: inline-block;
+  vertical-align: middle;
+  color: $grey;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 13px;
+
+  &:before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 13px;
+    height: 13px;
+    background: url('../../images/icons/phone-ico.png') center center no-repeat;
+    margin-right: 6px;
+  }
+}
+
+.order-call__button {
+  display: block;
+  padding-top: 1px;
+  padding-bottom: 3px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 2px solid $pink;
+  border-radius: 14px;
+  font-size: 14px;
+  font-weight: 700;
+  color: $pink;
+  text-align: center;
+}

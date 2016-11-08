@@ -1,0 +1,24 @@
+/*vars*/
+$container-width: 1037px;
+
+/*colors*/
+$bg-color: #fbfbfb;
+$grey: #56596a;
+$orange: #f7c880;
+$pink: #ff6c79;
+$pink1: #fe777b;
+
+
+
+/*layout*/
+@import "_adjust/fonts.scss";
+// @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+// @import url('https://fonts.googleapis.com/css?family=Ubuntu:400,500,700');
+@import "../bower/normalize.css/normalize.css";
+@import "_adjust/adjustment.scss";
+@import "sections/header.scss";
+@import "sections/hero.scss";
+
+
+//////main section
+
