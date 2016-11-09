@@ -1,0 +1,51 @@
+.why {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.why__list {
+  text-align: center;
+}
+
+.why__item {
+  display: inline-block;
+  vertical-align: top;
+  width: 20%;
+  margin-left: 2%;
+  margin-right: 2%;
+  text-align: center;
+}
+
+.why__logo {
+  width: 142px;
+  height: 142px;
+  border-radius: 50%;
+  background-color: $pink1;
+  margin: auto;
+  margin-bottom: 18px;
+  position: relative;
+
+  img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.why__title {
+  font-size: 14px;
+  font-weight: 700;
+  color: $pink1;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-bottom: 10px;
+}
+
+.why__descr {
+  font-size: 14px;
+  font-weight: 400;
+  color: $grey;
+  padding-left: 15px;
+  padding-right: 15px;
+}

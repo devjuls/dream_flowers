@@ -1,0 +1,86 @@
+.flowers {
+  padding-top: 30px;
+}
+
+.section-title {
+  color: $grey;
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-bottom: 85px;
+
+  &:after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 3px;
+    background-color: $orange;
+    margin: 10px auto;
+  }
+}
+
+.slick-slider {
+  width: 75%;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.flowers__image {
+  height: 200px;
+
+  img {
+    margin: 0 auto;
+  }
+}
+
+.flowers__title {
+  font-size: 14px;
+  font-weight: 400;
+  color: #fff;
+  width: 116px;
+  background-color: $pink1;
+  border-radius: 9px;
+  padding: 2px 10px;
+  margin: 0 auto;
+}
+
+.flowers__block {
+  min-height: 369px;
+  background: url(../../images/flowers-block.jpg) center center no-repeat;
+  background-size: cover;
+  padding-top: 65px;
+}
+
+.flowers__baloon {
+  border-radius: 50%;
+  display: inline-block;
+  vertical-align: bottom;
+
+  p {
+    color: #fff;
+    margin: auto;
+    font-size: 14px;
+    font-weight: 700;
+  }
+}
+
+.flowers__baloon_pink {
+  width: 233px;
+  height: 233px;
+  background-color: $pink1;
+  padding: 20px;
+  padding-top: 75px;
+  margin-left: -330px;
+}
+
+.flowers__baloon_orange {
+  width: 111px;
+  height: 111px;
+  background-color: $orange;
+  padding: 20px;
+  padding-top: 40px;
+  margin-left: 215px;
+  margin-bottom: 18px;
+}
