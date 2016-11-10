@@ -1,0 +1,53 @@
+.pack {
+  padding-top: 50px;
+  padding-bottom: 200px;
+
+  .section-title {
+
+  }
+}
+
+.pack__block {
+
+  background-image: linear-gradient(to right, #f5cc8a 0%, #ff6978 100%);
+
+  .container {
+    position: relative;
+    min-height: 390px;
+  }
+}
+
+#pack-slider {
+  min-height: 390px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.pack__image {
+  float: left;
+  max-width: 50%;
+  height: auto;
+}
+
+.pack__content {
+  padding-top: 135px;
+  margin-left: 50%;
+  width: 50%;
+}
+
+.pack__title {
+  color: #fbffff;
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.pack__descr {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 25px;
+}

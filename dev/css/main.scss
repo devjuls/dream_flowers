@@ -16,12 +16,14 @@ $pink1: #fe777b;
 // @import url('https://fonts.googleapis.com/css?family=Ubuntu:400,500,700');
 @import "../bower/normalize.css/normalize.css";
 @import "_adjust/adjustment.scss";
+@import "sections/layout.scss";
 @import "sections/header.scss";
 @import "sections/hero.scss";
 @import "sections/flowers.scss";
 @import "sections/slick.css";
 @import "sections/slick-theme.css";
 @import "sections/why.scss";
+@import "sections/pack.scss";
 
 
 //////main section

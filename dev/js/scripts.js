@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
- $('.slick-slider').slick({
+ $('#flowers-slider').slick({
   infinite: true,
   speed: 300,
   slidesToShow: 4,
@@ -32,6 +32,27 @@ $(document).ready(function() {
     // settings: "unslick"
     // instead of a settings object
   ]
-});
+ });
+
+  $('#pack-slider').slick({
+  infinite: true,
+  speed: 300,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  dots: true,
+  // responsive: [
+  //   {
+  //     breakpoint: 1500,
+  //     settings: {
+  //       slidesToShow: 3,
+  //       slidesToScroll: 3,
+  //     }
+  //   },
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  // ]
+ });
 
 });
