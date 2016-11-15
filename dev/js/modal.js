@@ -89,4 +89,31 @@ $(document).ready(function() {
 
   }());
 
+
+//открытие попапа с букетом
+  (function(){
+
+    $('.bouquets__link').on('click', function(e){
+
+      var src = $(this).find('.bouquets__img').attr('src');
+
+      e.preventDefault();
+
+      $('#modal-bouquet').find('.full-image').attr('src', src);
+
+      $('#overlay').fadeIn(300,
+        function(){
+          $('#modal-bouquet')
+            .show(100).animate({top: '50px'});
+      });
+    });
+
+    $('.modal-order__close, #overlay').click(function(){
+      $('#modal-bouquet').animate({top: '20px'}).hide(100,
+        function() {
+          $('#overlay').fadeOut(200)});
+    });
+
+  }());
+
 });

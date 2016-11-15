@@ -42,18 +42,6 @@
   right: 0;
   margin: auto;
 
-  &:after {
-    content: "";
-    position: absolute;
-    top: -40px;
-    left: -40px;
-    width: 250px;
-    height: 250px;
-    background-position: top center;
-    background-repeat: no-repeat;
-    transform: rotate(-45deg);
-  }
-
   &:before {
     content: "";
     position: absolute;
@@ -65,7 +53,7 @@
     right: 0;
     margin: auto;
     background-color: rgba(#cbd5d3, 0.3);
-    z-index: 1;
+    z-index: 2;
     transition: background-color .2s;
   }
 
@@ -77,58 +65,32 @@
     &:before {
       background-color: rgba(#f6c489, 0.8);
     }
-
-    // .bouquets__link:after {
-    //   background-size: 200%;
-    //   width: 300px;
-    //   height: 300px;
-    // }
-
-
   }
 }
 
-.bouquets__item_1 {
-  .bouquets__link:after {
-    background-image: url('./../images/bouquet1.jpg');
-  }
-}
-
-.bouquets__item_2 {
-  .bouquets__link:after {
-    background-image: url('./../images/bouquet2.jpg');
-  }
-}
-
-.bouquets__item_3 {
-  .bouquets__link:after {
-    background-image: url('./../images/bouquet3.jpg');
-  }
-}
-
-.bouquets__item_4 {
-  .bouquets__link:after {
-    background-image: url('./../images/bouquet4.jpg');
-  }
-}
-
-.bouquets__item_5 {
-  .bouquets__link:after {
-    background-image: url('./../images/bouquet5.jpg');
-  }
+.bouquets__img {
+  width: 180%;
+  height: 180%;
+  transform: rotate(-45deg);
+  position: absolute;
+  top: -30%;
+  left: -25%;
+  z-index: 1;
+  transition: width .2s, height .2s top .2s;
 }
 
 .bouquets__text {
-  position: relative;
-  z-index: 2;
+  z-index: 3;
   font-size: 18px;
   font-weight: 700;
   letter-spacing: 1px;
   color: #fff;
   transform: rotate(-45deg);
-  margin-top: 60px;
   padding-left: 15px;
   padding-right: 15px;
+  position: absolute;
+  top: 55px;
+  left: 0;
   display: none;
 }
 
