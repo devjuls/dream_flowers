@@ -19,19 +19,34 @@
 .btn {
   display: inline-block;
   padding: 10px 40px;
-  background-color: $pink1;
   border-radius: 20px;
   font-size: 18px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 2px;
   color: #fff;
+  outline: none;
 }
 
 .btn_orange {
-  background-color: #f5ca8a;
+  background-color: $orange1;
+  transition: background-color .3s;
+
+  &:hover {
+    background-color: #fbbc5e;
+  }
 }
 
 .btn_pink {
   background-color: $pink1;
+  transition: background-color .3s;
+
+  &:hover {
+    background-color: #fe6371;
+  }
+}
+
+.btn_small {
+  font-size: 14px;
+  padding: 10px 25px;
 }

@@ -1,4 +1,6 @@
 /* all scripts */
 
 //= slick.js
-//= scripts.js
+//= slider.js
+//= scroll.js
+//= modal.js

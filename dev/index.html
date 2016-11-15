@@ -22,7 +22,7 @@
 <!-- //////////////// header ///////////////////// -->
 <!-- ///////////////////////////////////////////// -->
 
-<header class="header">
+<header class="header" id="top">
   <div class="container">
 
     <a class="logo" href="#">
@@ -34,18 +34,18 @@
 
     <nav class="nav">
       <ul class="nav__list">
-        <li class="nav__item"><a href="#" class="nav__link">Цветы</a></li>
-        <li class="nav__item"><a href="#" class="nav__link">Почему мы</a></li>
-        <li class="nav__item"><a href="#" class="nav__link">Упаковка</a></li>
-        <li class="nav__item"><a href="#" class="nav__link">Наши букеты</a></li>
-        <li class="nav__item"><a href="#" class="nav__link">Как мы работаем</a></li>
-        <li class="nav__item"><a href="#" class="nav__link">Услуга инкогнито</a></li>
+        <li class="nav__item"><a href="#flowers" class="nav__link">Цветы</a></li>
+        <li class="nav__item"><a href="#why" class="nav__link">Почему мы</a></li>
+        <li class="nav__item"><a href="#pack" class="nav__link">Упаковка</a></li>
+        <li class="nav__item"><a href="#bouquets" class="nav__link">Наши букеты</a></li>
+        <li class="nav__item"><a href="#how" class="nav__link">Как мы работаем</a></li>
+        <li class="nav__item"><a href="#incognito" class="nav__link">Услуга Incognito</a></li>
       </ul>
     </nav> <!-- /nav  -->
 
     <div class="order-call">
-      <div class="order-call__phone">+38 095 406 23</div>
-      <a class="order-call__button" href="#">Заказать звонок</a>
+      <div class="order-call__phone">+38 095 406 23 88</div>
+      <a class="order-call__button js-order-call" href="#">Заказать звонок</a>
     </div> <!-- /order-call  -->
 
   </div> <!-- /container  -->
@@ -69,7 +69,7 @@
       </div>
       <div class="hero__text_big">Доставка по городу
         <b>бесплатно</b></div>
-      <a class="btn btn_red" href="#">Заказать</a>
+      <a class="btn btn_pink js-order-now" href="#">Заказать</a>
 
     </div> <!-- /hero__content  -->
 
@@ -80,7 +80,7 @@
 <!-- //////////////// section flowers //////////// -->
 <!-- ///////////////////////////////////////////// -->
 
-<section class="flowers">
+<section class="flowers" id="flowers">
 
   <div class="container">
 
@@ -156,7 +156,7 @@
 <!-- //////////////// section why //////////////// -->
 <!-- ///////////////////////////////////////////// -->
 
-<section class="why">
+<section class="why" id="why">
 
   <div class="container">
 
@@ -165,23 +165,23 @@
     <ul class="why__list">
       <li class="why__item">
         <div class="why__logo"><img src="images/icons/flower-ico.png" alt=""></div>
-        <div class="why__title">У нас только свежие цветы</div>
+        <h3 class="why__title">У нас только свежие цветы</h3>
         <div class="why__descr">Работаем напрямую, с поставщиками, мы не продаем старые и "залежавшиеся" цветы</div>
       </li>
       <li class="why__item">
         <div class="why__logo"><img src="images/icons/car-ico.png" alt=""></div>
-        <div class="why__title">Бесплатная доставка</div>
+        <h3 class="why__title">Бесплатная доставка</h3>
         <div class="why__descr">Сделайте предзаказ за сутки, и мы сможем доставить заказ в любое удобное место</div>
       </li>
       <li class="why__item">
         <div class="why__logo"><img src="images/icons/bouquet-ico.png" alt=""></div>
-        <div class="why__title">Букеты в авторской упаковке</div>
+        <h3 class="why__title">Букеты в авторской упаковке</h3>
         <div class="why__descr">Каждый букет сделанный нами мы
 бережно упаковываем в авторскую упаковку</div>
       </li>
       <li class="why__item">
         <div class="why__logo"><img src="images/icons/Wallet-ico.png" alt=""></div>
-        <div class="why__title">Цены ниже, чем в цветочных</div>
+        <h3 class="why__title">Цены ниже, чем в цветочных</h3>
         <div class="why__descr">У нас нету магазинов, поэтому мы продаем цветы на выгодных для вас условиях</div>
       </li>
     </ul> <!-- why__list  -->
@@ -194,7 +194,7 @@
 <!-- //////////////// section pack /////////////// -->
 <!-- ///////////////////////////////////////////// -->
 
-<section class="pack">
+<section class="pack" id="pack">
 
   <h2 class="section-title">Упаковка на ваш выбор</h2>
 
@@ -206,25 +206,25 @@
         <li class="pack__item">
           <img class="pack__image" src="images/pack.png" alt="pack photo">
           <div class="pack__content">
-            <div class="pack__title">Крафт - бумага</div>
+            <h3 class="pack__title">Крафт - бумага</h3>
             <div class="pack__descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit quis repellat architecto! Sint repellendus quas molestiae vel. Blanditiis quae, voluptatem pariatur, porro voluptatum neque commodi!</div>
-            <a class="btn btn_orange" href="#">Заказать</a>
+            <a class="btn btn_orange js-order-now" href="#">Заказать</a>
           </div>
         </li>
         <li class="pack__item">
           <img class="pack__image" src="images/pack.png" alt="pack photo">
           <div class="pack__content">
-            <div class="pack__title">Крафт - бумага</div>
+            <h3 class="pack__title">Крафт - бумага</h3>
             <div class="pack__descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit quis repellat architecto! Sint repellendus quas molestiae vel. Blanditiis quae, voluptatem pariatur, porro voluptatum neque commodi!</div>
-            <a class="btn btn_orange" href="#">Заказать</a>
+            <a class="btn btn_orange js-order-now" href="#">Заказать</a>
           </div>
         </li>
         <li class="pack__item">
           <img class="pack__image" src="images/pack.png" alt="pack photo">
           <div class="pack__content">
-            <div class="pack__title">Крафт - бумага</div>
+            <h3 class="pack__title">Крафт - бумага</h3>
             <div class="pack__descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit quis repellat architecto! Sint repellendus quas molestiae vel. Blanditiis quae, voluptatem pariatur, porro voluptatum neque commodi!</div>
-            <a class="btn btn_orange" href="#">Заказать</a>
+            <a class="btn btn_orange js-order-now" href="#">Заказать</a>
           </div>
         </li>
       </ul> <!-- /flowers-slider  -->
@@ -238,7 +238,7 @@
 <!-- //////////////// section bouquets /////////// -->
 <!-- ///////////////////////////////////////////// -->
 
-<section class="pack">
+<section class="bouquets" id="bouquets">
 
   <div class="container">
 
@@ -246,7 +246,7 @@
 
     <ul class="bouquets__list">
       <li class="bouquets__item bouquets__item_1">
-        <a class="bouquets__link" href="#">
+        <a class="bouquets__link" id="bouquet_roses" href="#">
           <div class="bouquets__text">Букет из роз</div>
         </a>
       </li>
@@ -270,35 +270,241 @@
           <div class="bouquets__text">Букет из хризантем</div>
         </a>
       </li>
+    </ul> <!-- /bouquets__list  -->
+
+    <ul class="socials__list">
+      <li class="socials__item socials__item_inst">
+        <a class="socials__link" href="#">Instagram</a>
+      </li>
+      <li class="socials__item socials__item_fb">
+        <a class="socials__link" href="#">Facebook</a>
+      </li>
+      <li class="socials__item socials__item_vk">
+        <a class="socials__link" href="#">Vkontakte</a>
+      </li>
+    </ul> <!-- /socials__list  -->
+
+    <div class="socials__text">
+      <p>Будем рады видеть Вас среди наших клиентов</p>
+      <p>Присоединяйтесь к нам!</p>
+    </div>
+
+  </div> <!-- /container  -->
+
+  <div class="your-bouquet">
+    <div class="container">
+      <div class="your-bouquet__title">Не нашли подходящего букета?</div>
+      <div class="your-bouquet__descr">Наши флористы создадут для Вас индивидуальный букет по Вашим требованиям</div>
+      <a class="btn btn_pink js-order-individual" href="#">Заказать индивидуальный букет</a>
+    </div> <!-- /container  -->
+
+  </div> <!-- /your-bouquet  -->
+
+</section> <!-- /section bouquet  -->
+
+<!-- ///////////////////////////////////////////// -->
+<!-- //////////////// section how //////////////// -->
+<!-- ///////////////////////////////////////////// -->
+
+<section class="how" id="how">
+
+  <div class="container">
+
+    <h2 class="section-title">Как мы работаем?</h2>
+
+    <ul class="how__list">
+      <li class="how__item how__item_1">
+        <div class="how__number-wrap">
+          <div class="how__number">1</div>
+        </div>
+        <h3 class="how__title">Получение цветов от поставщика</h3>
+        <div class="how__descr">
+          <p>Наши флористы заказывают цветы у проверенных поставщиков и контролируют качество цветов уже на начальном этапе</p>
+        </div>
+      </li>
+      <li class="how__item how__item_2">
+        <div class="how__number-wrap">
+          <div class="how__number">2</div>
+        </div>
+        <h3 class="how__title">Составление букета нашим флористом</h3>
+        <div class="how__descr">
+          <p>Каждый букет мы собираем с любовью, чтобы радовать ваших любимых людей</p>
+        </div>
+      </li>
+      <li class="how__item how__item_3">
+        <div class="how__number-wrap">
+          <div class="how__number">3</div>
+        </div>
+        <h3 class="how__title">Доставка букета в указанное место и время</h3>
+        <div class="how__descr">
+          <p>Мы осуществляем бесплатную доставку по Львову 24 часа в сутки и 7 дней в неделю</p>
+        </div>
+      </li>
+      <li class="how__item how__item_4">
+        <div class="how__number-wrap">
+          <div class="how__number">4</div>
+        </div>
+        <h3 class="how__title">Мощный заряд эмоций</h3>
+        <div class="how__descr">
+          <p>Обладатель нашего букета безусловно получит заряд эмоций, позитива и радости. Что является основной целью компании</p>
+        </div>
+      </li>
     </ul>
 
   </div> <!-- /container  -->
 
-</section> <!-- /section bouquet  -->
+</section> <!-- /section how  -->
 
+<!-- ///////////////////////////////////////////// -->
+<!-- //////////////// section incognito ////////// -->
+<!-- ///////////////////////////////////////////// -->
 
+<section class="incognito" id="incognito">
 
-</div>
+  <div class="container">
+    <h2 class="incognito__title">Услуга Incognito</h2>
+    <div class="incognito__descr">Доставка цветов адресату, если наш клиент пожелает остаться неизвестным. В этом случае заказ доставляется от лица компании Dream Flowers</div>
+    <a class="btn btn_pink js-order-incognito" href="#">Заказать услугу Incognito</a>
+  </div> <!-- /container  -->
+
+</section> <!-- /section incognito  -->
+
+</div> <!-- wrapper  -->
 
 <!-- //////////////// footer /////////////// -->
-  <footer class="footer">
+<footer class="footer">
+  <div class="container">
 
-  </footer>
+    <div class="footer__order">
+      <div class="order__title">Заказать доставку цветов:</div>
+      <div class="order__phone">+38 095 406 23 88</div>
+      <div class="order__whatsapp">Whatsapp, Viber</div>
+      <a class="btn btn_pink btn_small js-order-call" href="#">Заказать звонок</a>
+    </div> <!-- /footer__order  -->
 
+    <div class="footer__socials">
+      <div class="socials__title">Мы в социальных сетях:</div>
+
+      <ul class="socials__list">
+        <li class="socials__item socials__item_inst">
+          <a class="socials__link" href="#">Instagram</a>
+        </li>
+        <li class="socials__item socials__item_fb">
+          <a class="socials__link" href="#">Facebook</a>
+        </li>
+        <li class="socials__item socials__item_vk">
+          <a class="socials__link" href="#">Vkontakte</a>
+        </li>
+      </ul> <!-- /socials__list  -->
+
+      <a class="btn btn_pink btn_small btn_up" href="#top">Наверх</a>
+
+    </div>
+
+    <div class="footer__copyright">
+      <div class="copyright__text">
+        <p><b>Dream Flowers</b> &copy; 2016</p>
+        <p>Все права защищены</p>
+      </div>
+      <div class="copyright__text">
+        <p>Букеты в авторской упаковке</p>
+        <p>Доставка цветов во Львове</p>
+      </div>
+    </div> <!-- /footer__copyright  -->
+
+  </div> <!-- /container  -->
+</footer>
+
+
+<!-- ///////////////////////////////////////////// -->
+<!-- //////////////// modal window order ///////// -->
+<!-- ///////////////////////////////////////////// -->
+
+<!-- заказ букета  -->
+  <div id="modal-order">
+    <div class="modal-order__close"></div>
+
+    <div class="modal-order__form-wrap">
+      <form method="post" class="main-form">
+        <div class="modal-order__text">Для заказа <span>Букета</span> заполните поля, и мы свяжемся с Вами в течении 10 минут.</div>
+        <label class="name-label">
+          <input type="text" class="input-name" name="name" placeholder="Имя">
+        </label>
+        <label class="phone-label">
+          <input type="tel" class="input-phone" name="phone" placeholder="Телефон">
+        </label>
+        <button class="btn btn_pink btn_submit" type="submit">Заказать букет</button>
+        <div class="modal-order__text modal-order__text_sm">*данные будут использоваться исключительно для предоставления услуг компании Dream Flowers</div>
+      </form>
+    </div>
+  </div>
+
+<!-- заказ индивидуального букета  -->
+  <div id="modal-order_individual">
+    <div class="modal-order__close"></div>
+
+    <div class="modal-order__form-wrap">
+      <form method="post" class="main-form">
+        <div class="modal-order__text">Для заказа <span>Индивидуального Букета</span> заполните поля, и мы свяжемся с Вами в течении 10 минут.</div>
+        <label class="name-label">
+          <input type="text" class="input-name" name="name" placeholder="Имя">
+        </label>
+        <label class="phone-label">
+          <input type="tel" class="input-phone" name="phone" placeholder="Телефон">
+        </label>
+        <button class="btn btn_pink btn_submit" type="submit">Заказать букет</button>
+        <div class="modal-order__text modal-order__text_sm">*данные будут использоваться исключительно для предоставления услуг компании Dream Flowers</div>
+      </form>
+    </div>
+  </div>
+
+<!-- заказ услуги инкогнито  -->
+  <div id="modal-order_incognito">
+    <div class="modal-order__close"></div>
+
+    <div class="modal-order__form-wrap">
+      <form method="post" class="main-form">
+        <div class="modal-order__text">Для заказа <span>Услуги Инкогнито</span> заполните поля, и мы свяжемся с Вами в течении 10 минут.</div>
+        <label class="name-label">
+          <input type="text" class="input-name" name="name" placeholder="Имя">
+        </label>
+        <label class="phone-label">
+          <input type="tel" class="input-phone" name="phone" placeholder="Телефон">
+        </label>
+        <button class="btn btn_pink btn_submit" type="submit">Заказать букет</button>
+        <div class="modal-order__text modal-order__text_sm">*данные будут использоваться исключительно для предоставления услуг компании Dream Flowers</div>
+      </form>
+    </div>
+  </div>
+
+<!-- заказ звонка  -->
+  <div id="modal-order_call">
+    <div class="modal-order__close"></div>
+
+    <div class="modal-order__form-wrap">
+      <form method="post" class="main-form">
+        <div class="modal-order__text">Для заказа <span>Звонка</span> заполните поля, и мы свяжемся с Вами в течении 10 минут.</div>
+        <label class="name-label">
+          <input type="text" class="input-name" name="name" placeholder="Имя">
+        </label>
+        <label class="phone-label">
+          <input type="tel" class="input-phone" name="phone" placeholder="Телефон">
+        </label>
+        <button class="btn btn_pink btn_submit" type="submit">Заказать звонок</button>
+        <div class="modal-order__text modal-order__text_sm">*данные будут использоваться исключительно для предоставления услуг компании Dream Flowers</div>
+      </form>
+    </div>
+  </div>
+
+  <div id="overlay"></div><!-- Пoдлoжкa -->
 
 <!-- //////////////// scripts /////////////// -->
 
 <!-- JQuery  -->
-<!--   <script   src="https://code.jquery.com/jquery-1.12.4.min.js"   integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="   crossorigin="anonymous"></script> -->
-
-<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script   src="https://code.jquery.com/jquery-1.12.4.min.js"   integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="   crossorigin="anonymous"></script>
 
 <!-- phone mask  -->
   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.0/jquery.mask.js"></script> -->
-
-<!-- yandex map  -->
-  <!-- <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script> -->
 
 <script src="js/main.js"></script>
 

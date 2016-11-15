@@ -1,0 +1,144 @@
+.how {
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  .section-title {
+    font-weight: 700;
+    margin-bottom: 70px;
+  }
+}
+
+.how__list {
+  padding-left: 160px;
+  padding-right: 160px;
+}
+
+.how__number-wrap {
+  width: 165px;
+  height: 165px;
+  position: absolute;
+  font-family: 'Ubuntu';
+  font-size: 105px;
+  font-weight: 500;
+  color: $pink;
+  text-align: center;
+  z-index: 1;
+  transform: rotate(40deg);
+  overflow: hidden;
+
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    top: -50%;
+    left: -50%;
+    transform: rotate(-40deg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
+}
+
+.how__number {
+  width: 165px;
+  height: 165px;
+  position: absolute;
+  font-family: 'Ubuntu';
+  font-size: 105px;
+  font-weight: 500;
+  color: $pink;
+  text-align: center;
+  z-index: 1;
+  transform: rotate(-40deg);
+}
+
+.how__title {
+  display: inline-block;
+  color: #fbffff;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  padding-top: 8px;
+  padding-bottom: 12px;
+  padding-left: 110px;
+  padding-right: 18px;
+  background-color: $pink;
+}
+
+.how__descr {
+  font-size: 16px;
+  font-weight: 400;
+  color: $grey;
+}
+
+.how__item {
+  margin-bottom: 98px;
+  position: relative;
+
+  &:nth-child(odd) {
+    text-align: left;
+
+    .how__number-wrap {
+      top: 4px;
+      left: -62px;
+    }
+
+    .how__title {
+      padding-left: 110px;
+      padding-right: 18px;
+    }
+
+    .how__descr {
+      padding-left: 150px;
+      padding-right: 55px;
+    }
+  }
+
+  &:nth-child(even) {
+    text-align: right;
+
+    .how__number-wrap {
+      top: -4px;
+      right: -74px;
+    }
+
+    .how__title {
+      padding-left: 18px;
+      padding-right: 130px;
+    }
+
+    .how__descr {
+      padding-left: 55px;
+      padding-right: 150px;
+    }
+  }
+}
+
+.how__item_1 {
+  .how__number-wrap:after {
+    background-image: url('./../images/how1.jpg');
+  }
+}
+
+.how__item_2 {
+  .how__number-wrap:after {
+    background-image: url('./../images/how2.jpg');
+  }
+}
+
+.how__item_3 {
+  .how__number-wrap:after {
+    background-image: url('./../images/how3.jpg');
+    background-position: 156% 112%;
+  }
+}
+
+.how__item_4 {
+  .how__number-wrap:after {
+    background-image: url('./../images/how4.jpg');
+    background-position: 0 76%;
+  }
+}
+

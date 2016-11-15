@@ -1,5 +1,17 @@
+.bouquets {
+  padding-top: 50px;
+
+  .section-title {
+    font-weight: 700;
+    margin-bottom: 86px;
+  }
+}
+
+//bouquets
+
 .bouquets__list {
   text-align: center;
+  margin-bottom: 78px;
 }
 
 .bouquets__item {
@@ -52,8 +64,9 @@
     left: 0;
     right: 0;
     margin: auto;
-    background: rgba(#cbd5d3, 0.3);
+    background-color: rgba(#cbd5d3, 0.3);
     z-index: 1;
+    transition: background-color .2s;
   }
 
   &:hover {
@@ -62,7 +75,7 @@
     }
 
     &:before {
-      background: rgba(#f6c489, 0.8);
+      background-color: rgba(#f6c489, 0.8);
     }
 
   }
@@ -70,31 +83,31 @@
 
 .bouquets__item_1 {
   .bouquets__link:after {
-    background-image: url('../../images/bouquet1.jpg');
+    background-image: url('./../images/bouquet1.jpg');
   }
 }
 
 .bouquets__item_2 {
   .bouquets__link:after {
-    background-image: url('../../images/bouquet2.jpg');
+    background-image: url('./../images/bouquet2.jpg');
   }
 }
 
 .bouquets__item_3 {
   .bouquets__link:after {
-    background-image: url('../../images/bouquet3.jpg');
+    background-image: url('./../images/bouquet3.jpg');
   }
 }
 
 .bouquets__item_4 {
   .bouquets__link:after {
-    background-image: url('../../images/bouquet4.jpg');
+    background-image: url('./../images/bouquet4.jpg');
   }
 }
 
 .bouquets__item_5 {
   .bouquets__link:after {
-    background-image: url('../../images/bouquet5.jpg');
+    background-image: url('./../images/bouquet5.jpg');
   }
 }
 
@@ -110,4 +123,109 @@
   padding-left: 15px;
   padding-right: 15px;
   display: none;
+}
+
+//socials
+
+.socials__list {
+  margin: 0 auto;
+  margin-bottom: 17px;
+  text-align: center;
+}
+
+.socials__item {
+  display: inline-block;
+  margin-left: 7px;
+  margin-right: 7px;
+}
+
+.socials__link {
+  font-size: 0;
+  display: block;
+  width: 33px;
+  height: 33px;
+  padding: 2px;
+  border: 3px solid;
+  border-color: $pink2;
+  border-radius: 50%;
+  transition: border-color .3s;
+
+  &:after {
+    content: "";
+    color: $pink2;
+    font-family: 'FontAwesome';
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    transition: color .3s;
+  }
+
+  &:hover {
+    border-color: $orange1;
+
+    &:after {
+      color: $orange1;
+    }
+  }
+}
+
+.socials__item_inst {
+  .socials__link:after {
+    content: "\f16d";
+  }
+}
+
+.socials__item_fb {
+  .socials__link:after {
+    content: "\f09a";
+  }
+}
+
+.socials__item_vk {
+  .socials__link:after {
+    content: "\f189";
+  }
+}
+
+.socials__text {
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 60px;
+
+  p {
+    color: $grey;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-top: 0;
+    margin-bottom: -4px;
+  }
+}
+
+//your-bouquet
+
+.your-bouquet {
+  text-align: center;
+  min-height: 300px;
+  background: url('./../images/your-bouquet.jpg') center center no-repeat;
+  background-size: cover;
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+
+.your-bouquet__title {
+  color: #fbffff;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.your-bouquet__descr {
+  color: #fbffff;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  margin-bottom: 25px;
 }
