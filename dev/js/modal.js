@@ -11,7 +11,7 @@ $(document).ready(function() {
       $('#overlay').fadeIn(300,
         function(){
           $('#modal-order')
-            .show(100).animate({top: '190px'});
+            .show(100).animate({top: '60px'});
       });
     });
 
@@ -33,7 +33,7 @@ $(document).ready(function() {
       $('#overlay').fadeIn(300,
         function(){
           $('#modal-order_individual')
-            .show(100).animate({top: '190px'});
+            .show(100).animate({top: '60px'});
       });
     });
 
@@ -55,7 +55,7 @@ $(document).ready(function() {
       $('#overlay').fadeIn(300,
         function(){
           $('#modal-order_incognito')
-            .show(100).animate({top: '190px'});
+            .show(100).animate({top: '60px'});
       });
     });
 
@@ -77,7 +77,7 @@ $(document).ready(function() {
       $('#overlay').fadeIn(300,
         function(){
           $('#modal-order_call')
-            .show(100).animate({top: '190px'});
+            .show(100).animate({top: '60px'});
       });
     });
 
@@ -101,15 +101,15 @@ $(document).ready(function() {
 
       $('#modal-bouquet').find('.full-image').attr('src', src);
 
-      $('#overlay').fadeIn(300,
+      $('#overlay').fadeIn(200,
         function(){
           $('#modal-bouquet')
-            .show(100).animate({top: '50px'});
+            .fadeIn(100);
       });
     });
 
     $('.modal-order__close, #overlay').click(function(){
-      $('#modal-bouquet').animate({top: '20px'}).hide(100,
+      $('#modal-bouquet').fadeOut(100,
         function() {
           $('#overlay').fadeOut(200)});
     });

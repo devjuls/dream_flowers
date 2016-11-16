@@ -113,14 +113,16 @@
   display: block;
   width: 33px;
   height: 33px;
-  padding: 2px;
+  padding-top: 1px;
   border: 3px solid;
   border-color: $pink2;
   border-radius: 50%;
+  text-align: center;
   transition: border-color .3s;
 
   &:after {
     content: "";
+    display: inline-block;
     color: $pink2;
     font-family: 'FontAwesome';
     font-size: 18px;
