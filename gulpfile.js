@@ -20,21 +20,24 @@ var path = {
 		css: 'prod/css/',
 		js: 'prod/js/',
 		img: 'prod/images/',
-		fonts: 'prod/fonts/'
+		fonts: 'prod/fonts/',
+		php: 'prod/'
 	},
 	src: {
 		html: 'dev/*.html',
 		css: 'dev/css/main.scss',
 		js: 'dev/js/main.js',
 		img: 'dev/images/**/*.*',
-		fonts: 'dev/fonts/**/*.*'
+		fonts: 'dev/fonts/**/*.*',
+		php: 'dev/*.php'
 	},
 	watch: {
 		html: 'dev/**/*.html',
 		css: 'dev/css/**/*.scss',
 		js: 'dev/js/**/*.js',
 		img: 'dev/images/**/*.*',
-		fonts: 'dev/fonts/**/*.*'
+		fonts: 'dev/fonts/**/*.*',
+		php: 'dev/**/*.php'
 	},
 	clean: 'prod'
 };
@@ -99,12 +102,18 @@ gulp.task('fonts:build', function() {
 		.pipe(gulp.dest(path.dest.fonts));
 });
 
+gulp.task('php:build', function() {
+	gulp.src(path.src.php)
+		.pipe(gulp.dest(path.dest.php));
+});
+
 gulp.task('build', [
 	'html:build',
 	'css:build',
 	'fonts:build',
 	'img:build',
-	'js:build'
+	'js:build',
+	'php:build'
 ]);
 
 gulp.task('watch', function(){
@@ -122,6 +131,9 @@ gulp.task('watch', function(){
 	});
 	watch([path.watch.js], function(event, cb) {
 		gulp.start('js:build');
+	});
+	watch([path.watch.php], function(event, cb) {
+		gulp.start('php:build');
 	});
 });
 

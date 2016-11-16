@@ -438,7 +438,7 @@
     <div class="modal-order__close"></div>
 
     <div class="modal-order__form-wrap">
-      <form method="post" class="main-form">
+      <form class="main-form" id="form-order-bouquet">
         <div class="modal-order__text">Для заказа <span>Букета</span> заполните поля, и мы свяжемся с Вами в течении 10 минут.</div>
         <label class="name-label">
           <input type="text" class="input-name" name="name" placeholder="Имя">
@@ -446,7 +446,7 @@
         <label class="phone-label">
           <input type="tel" class="input-phone" name="phone" placeholder="Телефон">
         </label>
-        <button class="btn btn_pink btn_submit" type="submit">Заказать букет</button>
+        <input class="btn btn_pink btn_submit" type="submit" value="Заказать букет">
         <div class="modal-order__text modal-order__text_sm">*данные будут использоваться исключительно для предоставления услуг компании Dream Flowers</div>
       </form>
     </div>
@@ -457,7 +457,7 @@
     <div class="modal-order__close"></div>
 
     <div class="modal-order__form-wrap">
-      <form method="post" class="main-form">
+      <form class="main-form" id="form-order-individual">
         <div class="modal-order__text">Для заказа <span>Индивидуального Букета</span> заполните поля, и мы свяжемся с Вами в течении 10 минут.</div>
         <label class="name-label">
           <input type="text" class="input-name" name="name" placeholder="Имя">
@@ -476,7 +476,7 @@
     <div class="modal-order__close"></div>
 
     <div class="modal-order__form-wrap">
-      <form method="post" class="main-form">
+      <form method="post" class="main-form" id="form-order-incognito">
         <div class="modal-order__text">Для заказа <span>Услуги Инкогнито</span> заполните поля, и мы свяжемся с Вами в течении 10 минут.</div>
         <label class="name-label">
           <input type="text" class="input-name" name="name" placeholder="Имя">
@@ -495,7 +495,7 @@
     <div class="modal-order__close"></div>
 
     <div class="modal-order__form-wrap">
-      <form method="post" class="main-form">
+      <form method="post" class="main-form" id="form-order-call">
         <div class="modal-order__text">Для заказа <span>Звонка</span> заполните поля, и мы свяжемся с Вами в течении 10 минут.</div>
         <label class="name-label">
           <input type="text" class="input-name" name="name" placeholder="Имя">
@@ -529,6 +529,27 @@
   <script   src="https://code.jquery.com/jquery-1.12.4.min.js"   integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="   crossorigin="anonymous"></script>
 
 <script src="js/main.js"></script>
+
+<script type="text/javascript">
+  $(document).ready(function(){
+      $(".main-form").submit(function() { //устанавливаем событие отправки для формы
+
+              var id = $(this).attr('id');
+              var name = $(this).find('.input-name').val();
+              var phone = $(this).find('.input-phone').val();
+
+              $.ajax({
+                type: "POST", //Метод отправки
+                url: "send-form.php", //путь до php файла отправителя
+                data: {name: name, phone: phone, formId: id},
+                success: function() {
+                       //код в этом блоке выполняется при успешной отправке сообщения
+                       alert("Ваше сообщение отправлено!");
+                }
+              });
+      });
+  });
+</script>
 
 </body>
 </html>
